@@ -1,0 +1,12 @@
+.botoes{
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    
+    
+}
+
+.botoes .btn {
+    border-radius: 0.5rem;
+    margin: 0.5rem; 
+  }

@@ -2790,7 +2790,7 @@ textarea.form-control-lg {
 
 .btn {
   --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 
+  --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
@@ -2830,7 +2830,6 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
-    
     
     
   }
@@ -10976,16 +10975,17 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/fundo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  padding-top: 10.5rem; /* Espaçamento superior */
+  padding-bottom: 6rem; /* Espaçamento inferior */
+  text-align: center; /* Alinhamento do texto no centro */
+  color: #fff; /* Cor do texto */
+  background-image: url("../assets/img/fundo.jpg"); /* Caminho para a imagem de fundo */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  background-attachment: scroll; /* A imagem se move com a rolagem da página */
+  background-position: center center; /* Alinha a imagem ao centro do elemento */
+  background-size: cover; /* A imagem cobre todo o fundo do elemento */
 }
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
