@@ -16,8 +16,8 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ff5e00;
+  --bs-orange: #EB3A11;
+  --bs-yellow: #EB3A11;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -79,26 +79,26 @@
   --bs-highlight-bg: #fff4cc;
 }
 
-.whatsapp_float {
+.whatsapp_float { /* whats icon*/
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 20px; /* Ajustado para estar mais próximo da borda inferior */
-  right: 20px;  /* Ajustado para estar mais próximo da borda direita */
+  bottom: 20px; 
+  right: 20px;  
   color: #FFF;
   border-radius: 50%;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ajuste no sombreamento */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
   z-index: 100;
-  display: flex; /* Flexbox para centralizar o ícone */
-  align-items: center; /* Alinhamento vertical */
-  justify-content: center; /* Alinhamento horizontal */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .whatsapp_float img {
-  width: 60px; /* Ajuste do tamanho do ícone */
-  height: 60px; /* Ajuste da altura do ícone para manter a proporção */
+  width: 60px; 
+  height: 60px; 
 }
 
 *,
@@ -2790,12 +2790,16 @@ textarea.form-control-lg {
 
 .btn {
   --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-padding-y: 
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: #212529;
+  margin-right: 10px; 
+  padding: 10px 20px; 
+ 
+  text-align: center;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
@@ -2826,6 +2830,9 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
+    
+    
+    
   }
 }
 .btn:hover {
@@ -2867,37 +2874,38 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
+  
   --bs-btn-color: #fff;
-  --bs-btn-bg: #ffc800;
-  --bs-btn-border-color: #ffc800;
+  --bs-btn-bg: #EB3A11;
+  --bs-btn-border-color: #EB3A11;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d9aa00;
-  --bs-btn-hover-border-color: #cca000;
+  --bs-btn-hover-bg: #EC6127;
+  --bs-btn-hover-border-color: #EB3A11;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #cca000;
-  --bs-btn-active-border-color: #bf9600;
+  --bs-btn-active-bg: #EB3A11;
+  --bs-btn-active-border-color: #EB3A11;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #ffc800;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-disabled-bg: #EB3A11;
+  --bs-btn-disabled-border-color: #EB3A11;
 }
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
-  --bs-btn-border-color: #6c757d;
+  --bs-btn-bg: #EB3A11;
+  --bs-btn-border-color: #EB3A11;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
-  --bs-btn-hover-border-color: #565e64;
-  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-hover-bg: #EC6127;
+  --bs-btn-hover-border-color: #EB3A11;
+  --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-bg: #EB3A11;
+  --bs-btn-active-border-color: #EB3A11;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-bg: #EB3A11;
+  --bs-btn-disabled-border-color: #EB3A11;
 }
 
 .btn-success {
@@ -10884,7 +10892,10 @@ p {
   padding: 1.25rem 2.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
+  border-radius: 5px;
   font-weight: 700;
+  text-align: left;
+  padding: 20px; 
 }
 
 .btn-social {
@@ -11001,9 +11012,22 @@ header.masthead .masthead-heading {
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
+
+  .test-align { /*rodritati texto*/
+    text-align: left;
+    border: 1px;
+    width: 100%; 
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
-    text-align: left  !important;
+
+    text-align: left;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
