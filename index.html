@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/estilo.css">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <!--V-Libras-->
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app'); 
+    </script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -45,6 +50,13 @@
         <div class="container">
             <div class="masthead-subheading"> </div>
             <div class="test-align">Rodritati Transportes</div>
+        </div>
+<!-- V-Libras-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
         </div>
         <div class="botoes">
             <a class="btn btn-primary btn-xl text-uppercase" href="#services">Veja mais!</a>
