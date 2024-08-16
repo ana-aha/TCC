@@ -80,19 +80,24 @@
 }
 
 .estrada {
-  
+  height: 200px;                 
+  width: 100%;                            
+  border-radius: 5px;            
+  margin: 20px auto;            
 }
+
 .atendimento{ /*serviços*/
   background-color: #ffc800;
   border-radius: 9px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  padding: 90px;
-  max-width: 90px;
+  padding: 80px;
+  max-width: 10px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .whatsapp_float { /* whats icon*/
@@ -7617,7 +7622,7 @@ textarea.form-control-lg {
 }
 
 .my-3 {
-  margin-top: 5rem !important;
+  margin-top: 4rem !important;
   margin-bottom: 1rem !important;
 }
 
