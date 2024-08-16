@@ -79,6 +79,22 @@
   --bs-highlight-bg: #fff4cc;
 }
 
+.estrada {
+  
+}
+.atendimento{ /*serviços*/
+  background-color: #ffc800;
+  border-radius: 9px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 90px;
+  max-width: 90px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .whatsapp_float { /* whats icon*/
   position: fixed;
   width: 60px;
@@ -7601,7 +7617,7 @@ textarea.form-control-lg {
 }
 
 .my-3 {
-  margin-top: 1rem !important;
+  margin-top: 5rem !important;
   margin-bottom: 1rem !important;
 }
 
