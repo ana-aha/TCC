@@ -62,7 +62,7 @@ h2 {
 
 .square {
     width: 30%;
-    height: 105%;
+    height: 102%;
     padding-top: 5%; /* Mantém a proporção quadrada, usando padding-top para definir a altura */
     border-radius: 5px;
     position: relative;
