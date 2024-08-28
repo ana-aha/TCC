@@ -42,7 +42,7 @@ h1 {
 h2 {
     font-family: 'Arial', sans-serif; /* Define a fonte */
     font-weight: normal; /* Define o peso da fonte como normal */
-    font-size: 14px; /* Tamanho da fonte */
+    font-size: 9px; /* Tamanho da fonte */
     margin: 0; /* Remove margens */
 }
 .overlay {
@@ -62,7 +62,7 @@ h2 {
 
 .square {
     width: 30%;
-    height: 96%;
+    height: 90%;
     padding-top: 5%; /* Mantém a proporção quadrada, usando padding-top para definir a altura */
     border-radius: 5px;
     position: relative;
