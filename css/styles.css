@@ -10,6 +10,85 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.estrada {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Define a fonte */
+    font-weight: normal; /* Define o peso da fonte como normal */
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.square {
+    width: 30%;
+    height: 70%;
+    padding-top: 5%; /* Mantém a proporção quadrada, usando padding-top para definir a altura */
+    border-radius: 5px;
+    position: relative;
+    background-color: #EB3A11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px;
+}
+
+.number {
+    font-size: 4rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+      
+}
+
+.square h2 {
+    font-size: 24px;
+    margin: 0;
+    
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
