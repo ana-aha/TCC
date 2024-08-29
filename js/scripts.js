@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
-            return;
+    
         }
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
@@ -54,7 +54,6 @@ window.addEventListener('DOMContentLoaded', event => {
     
 });
 
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     function animateNumber(id, start, end, duration) {
         const numberElement = document.getElementById(id);

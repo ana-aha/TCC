@@ -10838,7 +10838,7 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #EB3A11;
+  color: #ffff;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -10850,12 +10850,15 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: #000; /* cor da letra do home */
   letter-spacing: 0.0625em;
+  background: linear-gradient(to right, #ffffff 100%, #FFA500 1000%);
+  /* Ajuste o valor de 50% para a proporção desejada */
 }
+
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #EB3A11;
-}
+} /*passando as cores*/
 
 @media (min-width: 992px) {
   #mainNav {
@@ -10876,7 +10879,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #fff; /*negocio preto*/
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
