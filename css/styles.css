@@ -2881,19 +2881,18 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
+/* Estilos base para os botões */
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: Arial, sans-serif; /* Fonte padrão */
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
+  --bs-btn-color: #212529; 
   margin-right: 10px; 
-  padding: 10px 20px; 
- 
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
   text-align: center;
-  --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 0.375rem;
@@ -2902,14 +2901,12 @@ textarea.form-control-lg {
   --bs-btn-disabled-opacity: 0.65;
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
-  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
   font-family: var(--bs-btn-font-family);
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
   color: var(--bs-btn-color);
-  text-align: center;
-  text-decoration: none;
+  text-decoration: none; /* Garante que não haja sublinhado */
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -2917,7 +2914,45 @@ textarea.form-control-lg {
           user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
-  background-color: var(--bs-btn-bg);
+}
+
+/* Especificando a cor de fundo para o botão primário */
+.btn-primary {
+  background-color: #EB3A11; /* Cor de fundo laranja */
+  color: white; /* Cor do texto para contrastar com o fundo laranja */
+  border-color: #EB3A11; /* Cor da borda para combinar com o fundo */
+}
+
+/* Especificando a cor de fundo para o botão secundário */
+.btn-secondary {
+  background-color: white; /* Cor de fundo branca */
+  color: black; /* Cor do texto para contraste com o fundo branco */
+  border-color: black; /* Cor da borda para contraste com o fundo branco */
+}
+
+/* Estilos para o botão em estado de hover */
+.btn-primary:hover {
+  background-color: darkorange; /* Tom mais escuro de laranja para o efeito hover */
+  border-color: darkorange; /* Tom mais escuro da borda */
+}
+
+.btn-secondary:hover {
+  background-color: #f8f9fa; /* Tom mais escuro de branco para o efeito hover */
+  border-color: #f8f9fa; /* Tom mais escuro da borda */
+}
+
+/* Estilos para o botão desabilitado */
+.btn-primary:disabled {
+  background-color: #e5e5e5; /* Cor de fundo para botão desabilitado */
+  color: #a0a0a0; /* Cor do texto para botão desabilitado */
+  border-color: #dcdcdc; /* Cor da borda para botão desabilitado */
+}
+
+.btn-secondary:disabled {
+  background-color: #e5e5e5; /* Cor de fundo para botão desabilitado */
+  color: #a0a0a0; /* Cor do texto para botão desabilitado */
+  border-color: #dcdcdc; /* Cor da borda para botão desabilitado */
+
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
