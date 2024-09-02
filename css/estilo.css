@@ -1,6 +1,6 @@
 .botoes{
     display: flex;
-    max-width: 1500px;
+    max-width: 1320px; /*1320px; pra pc e 1500px; not*/
     margin: auto;
     
     
