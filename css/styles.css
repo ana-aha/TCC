@@ -1,5 +1,34 @@
 @charset "UTF-8";
 
+.container11 {
+  position: relative;
+  width: 475px;
+  height: 624px;
+}
+
+.quadrado {
+  width: 305px;
+  height: 405px;
+  background-color: #E24B1B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -4;
+  border-radius: 20px; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.imagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  width: 300px; 
+  height: auto;
+  object-fit: cover;
+}
+
 body,
 html {
     margin: 0;
