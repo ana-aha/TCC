@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Exemplo de animação para diferentes elementos
-    animateNumber('number1', 0, 100, 7000); // 7 segundos para ir de 00 a 100:00
-    animateNumber('number2', 0, 100, 7000); // 7 segundos para ir de 00:00 a 100:00
-    animateNumber('number3', 0, 100, 7000); // 7 segundos para ir de 00:00 a 100:00
+    animateNumber('number1', 0, 100, 8000); // 8 segundos para ir de 00 a 100
+    animateNumber('number2', 0, 100, 8000); // 8 segundos para ir de 00:00 a 100
+    animateNumber('number3', 0, 100, 8000); // 8 segundos para ir de 00:00 a 100
 });
