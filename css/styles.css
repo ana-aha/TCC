@@ -36,7 +36,7 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #EB3A11;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -52,6 +52,36 @@ button {
   right: 10px;
 }
 
+
+
+
+/*acessiblidade */
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.container {
+  padding: 20px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button img {
+  width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 20px;
+  vertical-align: middle;
+}
 .quadrado {
   width: 305px;
   height: 405px;
@@ -4384,6 +4414,7 @@ fieldset:disabled .btn {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
+  align-items: center;
 }
 
 .navbar-brand:hover,
