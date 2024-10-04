@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', event => {
         // Altera o texto alternativo e a imagem do botão
         if (img.alt === 'Modo Escuro') {
             img.alt = 'Modo Claro';
-            img.src = 'assets/img/acessbilidade/luz.png'; // Troque para o ícone do modo claro
+            img.src = 'assets/img/acessbilidade/contraste.png'; // Troque para o ícone do modo claro
         } else {
             img.alt = 'Modo Escuro';
             img.src = 'assets/img/acessbilidade/contraste.png'; // Troque para o ícone do modo escuro
