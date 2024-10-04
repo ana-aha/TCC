@@ -25,19 +25,23 @@ window.addEventListener('DOMContentLoaded', event => {
     });
     
     document.getElementById('toggleMode').addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode'); // Alterna a classe dark-mode
+        // Alterna a classe dark-mode no corpo
+        document.body.classList.toggle('dark-mode');
+    
         const modeButton = document.getElementById('toggleMode');
         const img = modeButton.querySelector('img');
-        
+    
         // Altera o texto alternativo e a imagem do botão
         if (img.alt === 'Modo Escuro') {
             img.alt = 'Modo Claro';
-            img.src = ''; // Troque para o ícone do modo claro
+            img.src = 'assets/img/acessbilidade/luz.png'; // Troque para o ícone do modo claro
         } else {
             img.alt = 'Modo Escuro';
             img.src = 'assets/img/acessbilidade/contraste.png'; // Troque para o ícone do modo escuro
         }
     });
+    
+    
     
     
     
