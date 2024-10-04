@@ -73,9 +73,7 @@ window.addEventListener('DOMContentLoaded', event => {
         if (!navbarCollapsible) {
 
         }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
+       else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
 
