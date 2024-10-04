@@ -54,35 +54,49 @@ button {
 }
 
 
+/* Acessibilidade */
+body {
+  font-size: 16px; /* Tamanho padrão da fonte */
+  transition: background-color 0.3s, color 0.3s;
+}
 
-
-/*acessiblidade */
 .dark-mode {
   background-color: #333333;
   color: #ffffff;
 }
 
-.container {
-  padding: 20px;
-}
-
 .controls {
-  margin-top: 20px;
+  position: fixed; /* Mantém os botões fixos na tela */
+  bottom: 40%; /* Distância do fundo */
+  right: 40px; /* Distância da direita */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Alinha os botões em coluna */
+  gap: 10px; /* Espaçamento entre os botões */
 }
 
-button {
-  padding: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-  border: none;
-  background: none;
+.controls button {
+  padding: 10px; /* Espaçamento interno */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  border: none; /* Remove a borda */
+  background-color: #fff; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto dos botões */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efeito de relevo */
+  transition: background-color 0.3s, transform 0.2s; /* Transição suave para cor e transformação */
 }
 
-button img {
-  width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
-  height: 20px;
-  vertical-align: middle;
+.controls button:hover {
+  background-color: #707172; /* Cor ao passar o mouse */
+  transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
 }
+
+.controls button img {
+  width: 30px; /* Tamanho da imagem */
+  height: 30px; /* Tamanho da imagem */
+}
+
+
+
 .quadrado {
   width: 305px;
   height: 405px;
