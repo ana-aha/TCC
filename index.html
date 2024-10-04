@@ -73,25 +73,25 @@
 
     </header>
     <div class="col-lg">
-    <div class="controls">
-        <div class="control-column">
-            <button id="increaseFont">
-                <img src="assets/img/acessbilidade/aumentar_fonte.png" alt="Aumentar Fonte">
-            </button>
-        </div>
-        <div class="control-column">
-            <button id="decreaseFont">
-                <img src="assets/img/acessbilidade/diminuir_fonte.png" alt="Diminuir Fonte">
-            </button>
-        </div>
-        <div class="control-column">
-            <button id="toggleMode">
-                <img src="assets/img/acessbilidade/contraste.png" alt="Modo Escuro">
-            </button>
+        <div class="controls">
+            <div class="control-column">
+                <button id="increaseFont">
+                    <img src="assets/img/acessbilidade/aumentar_fonte.png" alt="Aumentar Fonte">
+                </button>
+            </div>
+            <div class="control-column">
+                <button id="decreaseFont">
+                    <img src="assets/img/acessbilidade/diminuir_fonte.png" alt="Diminuir Fonte">
+                </button>
+            </div>
+            <div class="control-column">
+                <button id="toggleMode">
+                    <img src="assets/img/acessbilidade/contraste.png" alt="Modo Escuro">
+                </button>
+            </div>
         </div>
     </div>
-    </div>
-    
+
     <!-- WhatsApp Button -->
     <a href="
         https://wa.me/+5518997663075?text=Ol%C3%A1,%20*Rodritati*!%20%20%20Estou%20entrando%20em%20contato%20porque%20estou%20interessado(a)%20em%20seus%20servi%C3%A7os%20de%20transporte%20e%20log%C3%ADstica.%20%20Se%20poss%C3%ADvel,%20gostaria%20de%20receber%20uma%20cota%C3%A7%C3%A3o%20ou%20mais%20detalhes%20sobre%20o%20que%20voc%C3%AAs%20oferecem.
@@ -177,19 +177,19 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img src="assets/img/servicos/6 (2) 1.png" class="imagem-atendimento">
+                    <img src="assets/img/servicos/Atendimento.png" alt="Ícone de Atendimentos" class="imagem-atendimento">
                     <h4 class="my-3">Atendimentos</h4>
                     <p class="text-muted">São Paulo e Região</p>
                 </div>
 
                 <div class="col-md-4">
-                    <img src="assets/img/servicos/6 (3) 1.png" class="imagem-atendimento">
+                    <img src="assets/img/servicos/Tipos de Carga.png" alt="Ícone de tipos de Carga" class="imagem-atendimento">
                     <h4 class="my-3">Tipos de carga</h4>
                     <p class="text-muted">IBC, sacarias, bombonas e ferragens</p>
                 </div>
 
                 <div class="col-md-4">
-                    <img src="assets/img/servicos/TR 1.png" class="imagem-atendimento">
+                    <img src="assets/img/servicos/Seguro de Carga.png" alt="Ícone de Seguro de Carga" class="imagem-atendimento">
                     <h4 class="my-3">Seguro de Carga</h4>
                     <p class="text-muted">Seguro para proteger sua mercadoria.</p>
                 </div>
@@ -355,80 +355,67 @@
                         <!-- Contato-->
 
                         <section class="page-section" id="contact">
-                            <div class="container">
-                                <div class="col-lg-9 ">
-                                    <div class="text-center ">
-                                        <h2 class="section-heading text-uppercase">Contato</h2>
-                                        <h3 class="section-subheading text-muted">Entre em contato com a Transportadora
-                                        </h3>
+                            <div class="container-fluid"> <!-- Use container-fluid para ocupar toda a largura -->
+                                <div class="row justify-content-center"> <!-- Centraliza a coluna -->
+                                    <div class="col-lg-9 col-md-10 col-sm-12">
+                                        <!-- Adicione col-md-10 e col-sm-12 para responsividade -->
+                                        <div class="text-center mb-4">
+                                            <h2 class="section-heading text-uppercase">Contato</h2>
+                                            <h3 class="section-subheading text-muted">Entre em contato com a
+                                                Transportadora</h3>
+                                        </div>
+                                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                            <div class="row align-items-stretch mb-5">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <input class="form-control" id="name"
+                                                            type="text" placeholder="Seu Nome *"
+                                                            data-sb-validations="required" />
+                                                        <div class="invalid-feedback" data-sb-feedback="name:required">É
+                                                            necessário um nome.</div>
+                                                    </div>
+                                                    <div class="form-group"> <input class="form-control" id="email"
+                                                            type="email" placeholder="Seu Email *"
+                                                            data-sb-validations="required,email" />
+                                                        <div class="invalid-feedback" data-sb-feedback="email:required">
+                                                            É necessário um email.</div>
+                                                        <div class="invalid-feedback" data-sb-feedback="email:email">
+                                                            Email inválido.</div>
+                                                    </div>
+                                                    <div class="form-group mb-md-0"> <input class="form-control"
+                                                            id="phone" type="tel" placeholder="Seu Número *"
+                                                            data-sb-validations="required" />
+                                                        <div class="invalid-feedback" data-sb-feedback="phone:required">
+                                                            É necessário um número.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-group-textarea mb-md-0"> <textarea
+                                                            class="form-control" id="message"
+                                                            placeholder="Sua Mensagem *"
+                                                            data-sb-validations="required"></textarea>
+                                                        <div class="invalid-feedback"
+                                                            data-sb-feedback="message:required">É necessária uma
+                                                            mensagem.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-none" id="submitSuccessMessage">
+                                                <div class="text-center text-white mb-3">
+                                                    <div class="fw-bolder">Enviado sua solicitação de contato com
+                                                        sucesso!</div> <br />
+                                                </div>
+                                            </div>
+                                            <div class="d-none" id="submitErrorMessage">
+                                                <div class="text-center text-danger mb-3">Erro ao enviar mensagem!</div>
+                                            </div>
+                                            <div class="text-center"> <button
+                                                    class="btn btn-primary btn-xl text-uppercase disabled"
+                                                    id="submitButton" type="submit">Enviar mensagem</button> </div>
+                                        </form>
                                     </div>
-                                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                        <div class="row align-items-stretch mb-5">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <!-- Nome-->
-                                                    <input class="form-control" id="name" type="text"
-                                                        placeholder="Seu Nome *" data-sb-validations="required" />
-                                                    <div class="invalid-feedback" data-sb-feedback="name:required">É
-                                                        necessário um nome.
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <!-- Email -->
-                                                    <input class="form-control" id="email" type="email"
-                                                        placeholder="Seu Email *"
-                                                        data-sb-validations="required,email" />
-                                                    <div class="invalid-feedback" data-sb-feedback="email:required">É
-                                                        necessário um
-                                                        email.</div>
-                                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email
-                                                        inválido </div>
-                                                </div>
-                                                <div class="form-group mb-md-0">
-                                                    <!-- numero-->
-                                                    <input class="form-control" id="phone" type="tel"
-                                                        placeholder="Seu Número *" data-sb-validations="required" />
-                                                    <div class="invalid-feedback" data-sb-feedback="phone:required">É
-                                                        necessário um
-                                                        número.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-textarea mb-md-0">
-                                                    <!-- sua mensagem-->
-                                                    <textarea class="form-control" id="message"
-                                                        placeholder="Sua Mensagem *"
-                                                        data-sb-validations="required"></textarea>
-                                                    <div class="invalid-feedback" data-sb-feedback="message:required">É
-                                                        necessária uma
-                                                        mensagem.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- enviado com sucesso-->
-                                        <div class="d-none" id="submitSuccessMessage">
-                                            <div class="text-center text-white mb-3">
-                                                <div class="fw-bolder">Enviado sua solicitação de contato com sucesso!
-                                                </div>
-                                                <br />
-
-                                            </div>
-                                        </div>
-                                        <!-- erro ao enviar-->
-                                        <div class="d-none" id="submitErrorMessage">
-                                            <div class="text-center text-danger mb-3">Erro ao enviar mensagem!</div>
-                                        </div>
-                                        <!-- Submit Button-->
-                                        <div class="text-center"><button
-                                                class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
-                                                type="submit">Enviar mensagem</button></div>
-                                    </form>
                                 </div>
-
+                            </div>
                         </section>
-
                         <!-- Footer-->
                         <footer class="footer py-4">
                             <div class="container">
@@ -453,7 +440,7 @@
                                 </div>
                             </div>
                         </footer>
-                        
+
                         <!-- Portfolio 1-->
                         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
                             aria-hidden="true">
