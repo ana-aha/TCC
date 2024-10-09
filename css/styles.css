@@ -6,6 +6,22 @@
   width: 475px;
   height: 624px;
 }
+/*quadrado logo*/
+.quadrado-invisivel {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  width: 200px;  /* largura do quadrado */
+  height: 200px; /* altura do quadrado */
+  position: relative; /* para posicionar a imagem dentro */
+  background-color: transparent; /* fundo invisível */
+}
+.quadrado-invisivel img {
+  width: 100%;  /* a imagem ocupa toda a largura do quadrado */
+  height: auto; /* mantém a proporção da imagem */
+  position: absolute; /* para posicionar a imagem no quadrado */
+  top: 0; 
+  left: 0;
+}
 /*carrossel*/
 .carrossel {
   width: 1300px; /* Largura fixa de 1920px */
