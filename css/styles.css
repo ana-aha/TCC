@@ -6,17 +6,23 @@
   width: 475px;
   height: 624px;
 }
-/* quadrado da img */
-.quadrado-invisivel {
-  width: 40px; /* Ajuste a largura do quadrado */
-  height: 40px; /* Ajuste a altura do quadrado */
-  position: relative; /* Necessário para ajustar a posição */
-  margin-top: 0px; /* Distância do topo */
-  margin-left: 1000px; /* Distância da esquerda */
+.header-content {
+  display: flex;
+  align-items: center; /* Alinha verticalmente ao centro */
 }
 
+.quadrado-invisivel {
+  width: 1000px; /* Ajuste a largura do quadrado */
+  height: 1000px; /* Ajuste a altura do quadrado */
+  position: absolute;
+  margin-top: 0px; /* Distância do topo */
+  margin-left: 460px; /* Espaço entre o texto e o quadrado */
+  padding-top: 110px; /* Ajuste conforme necessário para descer a imagem */
+}
+
+
 .quadrado-invisivel img {
-  width: 40px; /* A imagem ocupa toda a largura do quadrado */
+  width: 100%; /* A imagem ocupa toda a largura do quadrado */
   height: auto; /* Mantém a proporção da imagem */
   display: block; /* Remove espaços em branco abaixo da imagem */
 }
