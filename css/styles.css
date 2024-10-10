@@ -295,7 +295,9 @@ h2 {
   width: 60px;
   height: 60px;
 }
-
+element.style {
+  color: #000;
+}
 *,
 *::before,
 *::after {
@@ -13024,6 +13026,7 @@ header.masthead .masthead-heading {
 
 .portfolio-modal .modal-content p {
   margin-bottom: 2rem;
+  color: #000;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
