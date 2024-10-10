@@ -12,17 +12,26 @@ window.addEventListener('DOMContentLoaded', event => {
 
     let fontSize = 16;
 
+    function updateFontSize() {
+        document.querySelectorAll('h2, h3, h4, p').forEach(element => {
+            element.style.fontSize = fontSize + 'px';
+        });
+    }
+    
     document.getElementById('increaseFont').addEventListener('click', () => {
         fontSize += 2; // Aumenta o tamanho da fonte
-        document.body.style.fontSize = fontSize + 'px';
+        updateFontSize(); // Aplica o novo tamanho a todos os h1, h2, h3, h4, p
     });
     
     document.getElementById('decreaseFont').addEventListener('click', () => {
         if (fontSize > 10) { // Limita o tamanho mínimo
             fontSize -= 2; // Diminui o tamanho da fonte
-            document.body.style.fontSize = fontSize + 'px';
+            updateFontSize(); // Aplica o novo tamanho a todos os h1, h2, h3, h4
         }
     });
+    
+    // Inicializa o tamanho da fonte
+    updateFontSize();
     
     document.getElementById('toggleMode').addEventListener('click', () => {
         // Alterna a classe dark-mode no corpo
