@@ -11,7 +11,6 @@
   align-items: center; /* Alinha verticalmente ao centro */
 }
 
-
 .quadrado-invisivel {
   width: 1000px; /* Ajuste a largura do quadrado */
   height: 1000px; /* Ajuste a altura do quadrado */
@@ -19,6 +18,14 @@
   margin-top: 0px; /* Distância do topo */
   margin-left: 460px; /* Espaço entre o texto e o quadrado */
   padding-top: 110px; /* Ajuste conforme necessário para descer a imagem */
+}
+.section-subheading {
+  background-color: white; /* Fundo branco */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra em volta do elemento */
 }
 
 
