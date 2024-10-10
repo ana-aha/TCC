@@ -300,7 +300,7 @@ h2 {
 *::before,
 *::after {
   box-sizing: border-box;
-  color: #000;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13015,6 +13015,7 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content .h2 {
   font-size: 3rem;
   line-height: 3rem;
+  color: #000;
 }
 
 .portfolio-modal .modal-content p.item-intro {
