@@ -295,13 +295,12 @@ h2 {
   width: 60px;
   height: 60px;
 }
-element.style {
-  color: #000;
-}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  color: #000;
 }
 
 @media (prefers-reduced-motion: no-preference) {
