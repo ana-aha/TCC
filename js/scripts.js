@@ -34,19 +34,25 @@ window.addEventListener('DOMContentLoaded', event => {
     updateFontSize();
     
     document.getElementById('toggleMode').addEventListener('click', () => {
-        // Alterna a classe dark-mode no corpo
-        document.body.classList.toggle('dark-mode');
-    
+        // Alterna a cor de fundo e do texto
+        const isDarkMode = document.body.style.backgroundColor === 'black';
+        document.body.style.backgroundColor = isDarkMode ? 'white' : 'black';
+        document.body.style.color = isDarkMode ? 'black' : 'white';
+
+        // Acessa a div específica
+        const infoDiv = document.querySelector('.col-lg-4.text-lg-end');
+        infoDiv.style.color = isDarkMode ? 'black' : 'white'; // Altera a cor do texto na div
+
         const modeButton = document.getElementById('toggleMode');
         const img = modeButton.querySelector('img');
-    
+
         // Altera o texto alternativo e a imagem do botão
         if (img.alt === 'Modo Escuro') {
             img.alt = 'Modo Claro';
-            img.src = 'assets/img/acessbilidade/contraste.png'; // Troque para o ícone do modo claro
+            img.src = 'assets/img/acessbilidade/contraste.png'; // Imagem para modo claro
         } else {
             img.alt = 'Modo Escuro';
-            img.src = 'assets/img/acessbilidade/contraste.png'; // Troque para o ícone do modo escuro
+            img.src = 'assets/img/acessbilidade/contraste.png'; // Imagem para modo escuro
         }
     });
     
