@@ -21,9 +21,9 @@
   position: absolute;
   margin-top: 0px;
   /* Distância do topo */
-  margin-left: 460px;
+  margin-left: 440px;
   /* Espaço entre o texto e o quadrado */
-  padding-top: 110px;
+  padding-top: 160px;
   /* Ajuste conforme necessário para descer a imagem */
 }
 
@@ -12826,7 +12826,7 @@ p {
   font-size: 1.125rem;
   border-radius: 5px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   padding: 20px;
 }
 
