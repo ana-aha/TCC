@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
     let fontSize = 16;
 
     function updateFontSize() {
-        document.querySelectorAll('h2, h3, h4, p').forEach(element => {
+        document.querySelectorAll('h2, h3, h4, p, background-color').forEach(element => {
             element.style.fontSize = fontSize + 'px';
         });
     }

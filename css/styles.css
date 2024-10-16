@@ -6,63 +6,80 @@
   width: 475px;
   height: 624px;
 }
+
 .header-content {
   display: flex;
-  align-items: center; /* Alinha verticalmente ao centro */
+  align-items: center;
+  /* Alinha verticalmente ao centro */
 }
 
 .quadrado-invisivel {
-  width: 1000px; /* Ajuste a largura do quadrado */
-  height: 1000px; /* Ajuste a altura do quadrado */
+  width: 1000px;
+  /* Ajuste a largura do quadrado */
+  height: 1000px;
+  /* Ajuste a altura do quadrado */
   position: absolute;
-  margin-top: 0px; /* Distância do topo */
-  margin-left: 460px; /* Espaço entre o texto e o quadrado */
-  padding-top: 110px; /* Ajuste conforme necessário para descer a imagem */
+  margin-top: 0px;
+  /* Distância do topo */
+  margin-left: 460px;
+  /* Espaço entre o texto e o quadrado */
+  padding-top: 110px;
+  /* Ajuste conforme necessário para descer a imagem */
 }
+
 .section-subheading {
-  background-color: white; /* Fundo branco */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  text-align: center; /* Centraliza o texto */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+  padding: 10px;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o texto */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  /* Sombra do texto */
 }
 
 
 .quadrado-invisivel img {
-  width: 100%; /* A imagem ocupa toda a largura do quadrado */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove espaços em branco abaixo da imagem */
+  width: 100%;
+  /* A imagem ocupa toda a largura do quadrado */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  display: block;
+  /* Remove espaços em branco abaixo da imagem */
 }
 
 /*carrossel*/
 .carrossel {
-  width: 1300px; /* Largura fixa de 1920px */
-  height: 600px; 
+  width: 1300px;
+  /* Largura fixa de 1920px */
+  height: 600px;
   position: relative;
   overflow: hidden;
   border: 2px solid #ccc;
   border-radius: 10px;
-  margin: auto; /* Centraliza o carrossel na página */
+  margin: auto;
+  /* Centraliza o carrossel na página */
 }
 
 .carrossel-inner {
   display: flex;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .carrossel-item {
-  min-width: 1920px;  /*Largura de cada item igual a do carrossel */
+  min-width: 1920px;
+  /*Largura de cada item igual a do carrossel */
   box-sizing: border-box;
 }
 
 .carrossel-item img {
-  width: 100%; /* As imagens ocupam toda a largura do item */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  /* As imagens ocupam toda a largura do item */
+  height: auto;
+  /* Mantém a proporção da imagem */
   border-radius: 10px;
 }
 
 button {
-  
+
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -89,44 +106,64 @@ button {
 }
 
 .controls {
-  position: fixed; /* Mantém os botões fixos na tela */
-  bottom: 40%; /* Distância do fundo */
-  right: 4px; /* Distância da direita */
-  display: flex; /* Usar flexbox */
-  flex-direction: row; /* Alinha as colunas em linha */
+  position: fixed;
+  /* Mantém os botões fixos na tela */
+  bottom: 40%;
+  /* Distância do fundo */
+  right: 4px;
+  /* Distância da direita */
+  display: flex;
+  /* Usar flexbox */
+  flex-direction: row;
+  /* Alinha as colunas em linha */
 }
 
 
 .control-column {
-  margin-right: 60px; /* Espaçamento entre as colunas */
-  display: flex; /* Usar flexbox */
-  flex-direction: column; /* Alinha os botões em coluna */
+  margin-right: 60px;
+  /* Espaçamento entre as colunas */
+  display: flex;
+  /* Usar flexbox */
+  flex-direction: column;
+  /* Alinha os botões em coluna */
 }
 
 /* Remove a margem da última coluna */
 .control-column:last-child {
-  margin-right: 60; /* Remove a margem do último botão */
+  margin-right: 60;
+  /* Remove a margem do último botão */
 }
 
 .controls button {
-  padding: 10px; /* Espaçamento interno */
-  cursor: pointer; /* Muda o cursor ao passar o mouse */
-  border: none; /* Remove a borda */
-  background-color: #f5f5f5; /* Cor de fundo dos botões */
-  color: #333; /* Cor do texto dos botões */
-  border-radius: 5px; /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efeito de relevo */
-  transition: background-color 0.3s, transform 0.2s; /* Transição suave para cor e transformação */
+  padding: 10px;
+  /* Espaçamento interno */
+  cursor: pointer;
+  /* Muda o cursor ao passar o mouse */
+  border: none;
+  /* Remove a borda */
+  background-color: #f5f5f5;
+  /* Cor de fundo dos botões */
+  color: #333;
+  /* Cor do texto dos botões */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para efeito de relevo */
+  transition: background-color 0.3s, transform 0.2s;
+  /* Transição suave para cor e transformação */
 }
 
 .controls button:hover {
-  background-color: #707172; /* Cor ao passar o mouse */
-  
+  background-color: #707172;
+  /* Cor ao passar o mouse */
+
 }
 
 .controls button img {
-  width: 30px; /* Tamanho da imagem */
-  height: 30px; /* Tamanho da imagem */
+  width: 30px;
+  /* Tamanho da imagem */
+  height: 30px;
+  /* Tamanho da imagem */
 }
 
 .quadrado {
@@ -587,7 +624,7 @@ label {
 
 button {
   border-radius: 0;
-  
+
 }
 
 button:focus:not(:focus-visible) {
@@ -820,7 +857,8 @@ progress {
 
 .list-inline {
   padding-left: 0;
-  list-style: none;
+    list-style: none;
+    color: #000;
 }
 
 .list-inline-item {
@@ -1456,7 +1494,7 @@ progress {
     width: 33.33333333%;
     margin-top: -3rem !important;
     margin-bottom: 2rem !important;
-   
+
   }
 
   .col-md-5 {
@@ -7835,10 +7873,6 @@ fieldset:disabled .btn {
   color: #212529 !important;
 }
 
-.link-dark:hover,
-.link-dark:focus {
-  color: #1a1e21 !important;
-}
 
 .ratio {
   position: relative;
@@ -8675,10 +8709,11 @@ fieldset:disabled .btn {
 .my-3 {
   margin-top: -7rem !important;
   margin-bottom: 2rem !important;
- 
- 
+
+
 }
-.imagem-atendimento{
+
+.imagem-atendimento {
   max-width: 100%;
   height: auto;
   justify-content: center;
@@ -8686,6 +8721,7 @@ fieldset:disabled .btn {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
 }
+
 .my-4 {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
@@ -9124,6 +9160,10 @@ fieldset:disabled .btn {
 .text-uppercase {
   text-transform: uppercase !important;
 }
+.text-uppercas {
+  text-transform: uppercase !important;
+  color: #000;
+}
 
 .text-capitalize {
   text-transform: capitalize !important;
@@ -9201,7 +9241,7 @@ fieldset:disabled .btn {
 
 .text-muted {
   --bs-text-opacity: 1;
-  
+
 }
 
 .text-black-50 {
@@ -12751,23 +12791,26 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 .titulo {
   text-align: center;
-  max-width: 800px; 
-  font-family: 'Montserrat', sans-serif; 
+  max-width: 800px;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   font-size: 24px;
-  line-height: 1.5; 
+  line-height: 1.5;
   margin: 100;
 }
+
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
-  
+
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont,  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
-  "Segoe UI Symbol", "Noto Color Emoji" 'Montserrat', sans-serif; ;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" 'Montserrat', sans-serif;
+  ;
   margin-bottom: 4rem;
 }
 
@@ -12992,7 +13035,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
- 
+
 }
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
@@ -13294,7 +13337,7 @@ section#contact {
   max-width: 1903px;
   margin-left: -305px;
 }
- 
+
 section#contact .section-heading {
   color: #fff;
 }
@@ -13358,9 +13401,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-margin-bottom: -200px;
+  margin-bottom: -200px;
 }
 
-.btnvoltar{
+.btnvoltar {
   margin-left: 350px;
-  }
+}
