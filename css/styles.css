@@ -106,6 +106,8 @@ button {
 }
 
 .controls {
+  width: 60px; /* Define uma largura uniforme para os botões */
+  height: 40px; /* Define uma altura uniforme para os botões */
   display: flex;
   gap: 60px; /* Reduzir o espaçamento entre os botões */
   align-items: center; /* Centraliza verticalmente os botões */
