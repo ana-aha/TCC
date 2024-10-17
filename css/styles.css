@@ -106,65 +106,42 @@ button {
 }
 
 .controls {
-  position: fixed;
-  /* Mantém os botões fixos na tela */
-  bottom: 40%;
-  /* Distância do fundo */
-  right: 4px;
-  /* Distância da direita */
   display: flex;
-  /* Usar flexbox */
-  flex-direction: row;
-  /* Alinha as colunas em linha */
+  gap: 60px; /* Reduzir o espaçamento entre os botões */
+  align-items: center; /* Centraliza verticalmente os botões */
 }
 
-
 .control-column {
-  margin-right: 60px;
-  /* Espaçamento entre as colunas */
   display: flex;
-  /* Usar flexbox */
-  flex-direction: column;
-  /* Alinha os botões em coluna */
+  align-items: center; /* Centraliza verticalmente os botões */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo do botão */
 }
 
 /* Remove a margem da última coluna */
 .control-column:last-child {
-  margin-right: 60;
-  /* Remove a margem do último botão */
+  margin-right: 0; /* Remove a margem do último botão */
 }
 
 .controls button {
-  padding: 10px;
-  /* Espaçamento interno */
-  cursor: pointer;
-  /* Muda o cursor ao passar o mouse */
-  border: none;
-  /* Remove a borda */
-  background-color: #f5f5f5;
-  /* Cor de fundo dos botões */
-  color: #333;
-  /* Cor do texto dos botões */
-  border-radius: 5px;
-  /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Sombra para efeito de relevo */
-  transition: background-color 0.3s, transform 0.2s;
-  /* Transição suave para cor e transformação */
+  padding: 3px; /* Reduzir o espaçamento interno */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  border: none; /* Remove a borda */
+  background-color: #f5f5f5; /* Cor de fundo dos botões */
+  color: #333; /* Cor do texto dos botões */
+  border-radius: 3px; /* Bordas arredondadas */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Reduzir a sombra */
+  transition: background-color 0.3s, transform 0.2s; /* Transição suave para cor e transformação */
 }
 
 .controls button:hover {
-  background-color: #707172;
-  /* Cor ao passar o mouse */
-
+  background-color: #707172; /* Cor ao passar o mouse */
 }
 
 .controls button img {
-  width: 30px;
-  /* Tamanho da imagem */
-  height: 30px;
-  /* Tamanho da imagem */
+  width: 25px; /* Reduzir o tamanho da imagem */
+  height: 25px; /* Reduzir o tamanho da imagem */
 }
+
 
 .quadrado {
   width: 305px;
