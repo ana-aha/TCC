@@ -23,7 +23,7 @@
   /* Distância do topo */
   margin-left: 600px;
   /* Espaço entre o texto e o quadrado */
-  padding-top: 160px;
+  padding-top: 150px;
   /* Ajuste conforme necessário para descer a imagem */
 }
 
@@ -12945,7 +12945,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 15rem;
+    padding-top: 18rem;
     padding-bottom: 12.5rem;
   }
 
