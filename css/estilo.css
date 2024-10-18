@@ -1,7 +1,7 @@
 .botoes{
     display: flex;
     text-align: left;
-    max-width: 1520px; /*1320px; pra pc e 1500px; not*/
+    max-width: 1320px; /*1320px; pra pc e 1500px; not*/
     margin: auto;
     
     
