@@ -134,7 +134,7 @@ button {
   /* Centraliza horizontalmente o conteúdo do botão */
 }
 
-/* Remove a margem da última coluna */
+/* Remove a margem da última coluna *//* */
 .control-column:last-child {
   margin-right: 0;
   /* Remove a margem do último botão */
