@@ -160,10 +160,10 @@ button {
 
   display: inline-block;
   /* Altera para inline-block para evitar estiramento */
-  width: auto;
-  /* Permite que o botão ajuste sua largura ao conteúdo */
-  min-width: 60px;
+ 
+  min-width: 70px;
   /* Largura mínima */
+
 
 }
 
@@ -173,9 +173,9 @@ button {
 }
 
 .controls button img {
-  width: 25px;
+  width: 30px;
   /* Reduzir o tamanho da imagem */
-  height: 25px;
+  height: 30px;
   /* Reduzir o tamanho da imagem */
 
 }
