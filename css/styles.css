@@ -3624,6 +3624,8 @@ textarea.form-control.is-invalid {
 .btn:disabled,
 .btn.disabled,
 fieldset:disabled .btn {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
