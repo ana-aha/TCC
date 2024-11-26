@@ -13442,6 +13442,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 230px;
   height: auto;
 }
+.logoambipar{
+  width: 150px;
+  height: auto;
+}
+.logoabiquim{
+  width: 180px;
+  height: auto; 
+}
 .logoselos{ 
   width: 150px;
   height: auto;
@@ -13477,4 +13485,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   #selos .col-md-3 {
       flex: 0 0 50%; /* Em telas menores, as colunas ficam com 50% da largura */
   }
+}
+/* Espaçamento entre as seções */
+.page-section {
+  margin-bottom: -90px; /* Adiciona 50px de espaço entre as seções */
+}
+
+#services {
+  margin-bottom: -90px; /* Espaço adicional antes da seção Portfolio */
+}
+
+#portfolio {
+  margin-top: 40px; /* Espaço adicional antes da seção de vídeos */
+}
+
+/* Ajuste de margens nos títulos */
+.section-heading {
+  margin-bottom: 10px; /* Adiciona um pouco de espaço abaixo dos títulos */
+}
+
+.section-subheading {
+  margin-bottom: 20px; /* Adiciona mais espaço abaixo do subtítulo */
 }
