@@ -12827,7 +12827,13 @@ p {
   line-height: 1.5;
   margin: 100;
 }
-
+.page-section h3.section-subheading1,
+.page-section .section-subheading.h3 {
+  font-size: 1rem;
+  color: fff;
+  font-weight: 400;
+  font-style: italic;
+}
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -13453,57 +13459,4 @@ section#contact form#contactForm :-ms-input-placeholder {
 .logoselos{ 
   width: 150px;
   height: auto;
-}
-#selos .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#selos .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-#selos .col-md-3,
-#selos .col-sm-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px; /* Espaço inferior entre os logos */
-}
-
-#selos img.img-brand {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  #selos .col-md-3 {
-      flex: 0 0 50%; /* Em telas menores, as colunas ficam com 50% da largura */
-  }
-}
-/* Espaçamento entre as seções */
-.page-section {
-  margin-bottom: -90px; /* Adiciona 50px de espaço entre as seções */
-}
-
-#services {
-  margin-bottom: -90px; /* Espaço adicional antes da seção Portfolio */
-}
-
-#portfolio {
-  margin-top: 40px; /* Espaço adicional antes da seção de vídeos */
-}
-
-/* Ajuste de margens nos títulos */
-.section-heading {
-  margin-bottom: 10px; /* Adiciona um pouco de espaço abaixo dos títulos */
-}
-
-.section-subheading {
-  margin-bottom: 20px; /* Adiciona mais espaço abaixo do subtítulo */
 }
