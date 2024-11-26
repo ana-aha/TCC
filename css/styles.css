@@ -13438,7 +13438,43 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-left: 600px;
 }
 
-.ibamalogo{
-  width: 250px;
+.logoibama{ 
+  width: 230px;
   height: auto;
+}
+.logoselos{ 
+  width: 150px;
+  height: auto;
+}
+#selos .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#selos .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#selos .col-md-3,
+#selos .col-sm-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espaço inferior entre os logos */
+}
+
+#selos img.img-brand {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #selos .col-md-3 {
+      flex: 0 0 50%; /* Em telas menores, as colunas ficam com 50% da largura */
+  }
 }
