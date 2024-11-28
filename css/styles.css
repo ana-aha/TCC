@@ -13483,9 +13483,8 @@ section#contact {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px 20px;
-  /* Adiciona margem superior para descer mais */
-  margin-top: 50px; /* Ajuste este valor conforme necessário */
+  padding: 65px 20px;
+  margin-top: 50px; /* Ajuste esse valor conforme necessário */
 }
 
 /* Ajuste adicional para telas menores */
@@ -13493,7 +13492,8 @@ section#contact {
   section#contact {
     padding: 30px 15px;
     width: 700px;
-    margin-top: 170px; 
+    margin-top: 0; /* Garante que não haja espaço entre o contato e o rodapé */
+    padding-bottom: 200px; /* Ajuste o padding inferior, se necessário */
   }
 }
 
@@ -13503,6 +13503,12 @@ section#contact {
     padding: 20px 10px;
     margin-top: 20px; /* Menor margem superior para telas muito pequenas */
   }
+}
+
+/* Ajuste para garantir que o rodapé não tenha margens extras */
+footer.footer {
+  margin-top: 0; /* Garante que não haja espaço entre o contato e o rodapé */
+  padding-bottom: 20px; /* Ajuste o padding inferior, se necessário */
 }
 
 
