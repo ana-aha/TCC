@@ -227,7 +227,7 @@ button {
     height: 25px;
   }
 }
-
+/* Para telas com largura até 480px (dispositivos móveis) */
 /* Para telas com largura até 480px (dispositivos móveis) */
 @media (max-width: 480px) {
   .controls {
