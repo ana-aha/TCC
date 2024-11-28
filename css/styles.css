@@ -13480,24 +13480,20 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* Ajusta a imagem para cobrir toda a área sem distorção */
   width: 100%;
-  /* Usa 100% da largura da tela */
   max-width: 100%;
-  /* Garante que não ultrapasse a largura da tela */
   margin: 0 auto;
-  /* Centraliza a seção */
   padding: 50px 20px;
-  /* Adiciona espaçamento interno (opcional) */
+  /* Adiciona margem superior para descer mais */
+  margin-top: 50px; /* Ajuste este valor conforme necessário */
 }
 
 /* Ajuste adicional para telas menores */
 @media (max-width: 1064px) {
   section#contact {
     padding: 30px 15px;
-    /* Reduz o padding em telas menores */
     width: 700px;
-    /* Usa 100% da largura da tela */
+    margin-top: 170px; 
   }
 }
 
@@ -13505,9 +13501,10 @@ section#contact {
 @media (max-width: 480px) {
   section#contact {
     padding: 20px 10px;
-    /* Reduz ainda mais o padding em dispositivos muito pequenos */
+    margin-top: 20px; /* Menor margem superior para telas muito pequenas */
   }
 }
+
 
 section#contact .section-heading {
   color: #fff;
