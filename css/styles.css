@@ -149,14 +149,10 @@ button {
 
 .controls {
   width: 50px;
-  /* Define uma largura uniforme para os botões */
   height: 40px;
-  /* Define uma altura uniforme para os botões */
   display: flex;
   gap: 80px;
-  /* Reduzir o espaçamento entre os botões */
   align-items: center;
-  /* Centraliza verticalmente os botões */
 }
 
 .control-column {
@@ -213,6 +209,51 @@ button {
 
 }
 
+/* Estilos responsivos */
+
+/* Para telas com largura até 1024px (tablets em modo paisagem ou desktops menores) */
+@media (max-width: 1024px) {
+  .controls {
+    gap: 40px;  /* Menos espaço entre os botões em telas menores */
+  }
+
+  .controls button {
+    padding: 5px 10px; /* Ajustar o padding para caber melhor */
+    min-width: 60px; /* Botões um pouco menores */
+  }
+
+  .controls button img {
+    width: 25px;  /* Reduzir o tamanho da imagem */
+    height: 25px;
+  }
+}
+
+/* Para telas com largura até 480px (dispositivos móveis) */
+@media (max-width: 480px) {
+  .controls {
+    gap: 55px;  /* Aumenta o espaço entre os botões */
+    position: fixed;
+    right: 40px;  /* Coloca os botões no lado direito */
+    flex-direction: row-reverse; /* Organiza os botões na ordem inversa */
+    top: 1px; 
+  }
+
+  .controls button {
+    padding: 5px;  /* Ajusta o tamanho do padding para telas menores */
+    min-width: 50px;  /* Ajusta a largura mínima */
+    height: 42px;  /* Define a altura dos botões para 42px */
+    display: flex;
+    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    border-radius: 4px;  /* Bordas arredondadas */
+    
+  }
+
+  .controls button img {
+    width: 15px;  /* Tamanho ajustado para a imagem */
+    height: 15px;  /* Tamanho ajustado para a imagem */
+  }
+}
 
 .quadrado {
   width: 305px;
