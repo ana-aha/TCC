@@ -3,56 +3,6 @@
 #loom-companion-mv3 {
   display: none;
 }
-/* Estilos gerais */
-.navbar-toggler {
-    border: none;
-    background-color: transparent;
-}
-
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-/* Ajustes para telas pequenas */
-@media (max-width: 1060px) {
-    .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
-
-    .navbar-collapse {
-        text-align: center;
-    }
-
-    .nav-link {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-}
-
-/* Estilo para telas muito pequenas (480px ou menos) */
-@media (max-width: 480px) {
-    .nav-link {
-        font-size: 12px;
-        padding: 8px 10px;
-    }
-
-    .navbar-toggler {
-        font-size: 14px;
-    }
-
-    .navbar-toggler i {
-        font-size: 18px;
-    }
-}
-
-
-
 
 .container11 {
   position: relative;
