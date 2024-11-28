@@ -16,45 +16,68 @@
 }
 
 .quadrado-invisivel {
-  width: 50vw; /* Largura relativa à largura da tela */
-  height: 50vw; /* Altura relativa à largura da tela */
-  max-width: 1000px; /* Tamanho máximo para evitar que o quadrado fique muito grande */
-  max-height: 1000px; /* Tamanho máximo para evitar que o quadrado fique muito grande */
+  width: 50vw;
+  /* Largura relativa à largura da tela */
+  height: 50vw;
+  /* Altura relativa à largura da tela */
+  max-width: 1000px;
+  /* Tamanho máximo para evitar que o quadrado fique muito grande */
+  max-height: 1000px;
+  /* Tamanho máximo para evitar que o quadrado fique muito grande */
   position: absolute;
-  top: -0,0000000001; /* Distância do topo */
-  right: 0; /* Coloca o quadrado no lado direito da tela */
-  padding-top: 10%; /* Ajuste conforme necessário para descer a imagem */
-  background-color: rgba(0, 0, 0, 0); /* Mantém o quadrado invisível */
+  top: -0, 0000000001;
+  /* Distância do topo */
+  right: 0;
+  /* Coloca o quadrado no lado direito da tela */
+  padding-top: 8%;
+  /* Ajuste conforme necessário para descer a imagem */
+  background-color: rgba(0, 0, 0, 0);
+  /* Mantém o quadrado invisível */
 }
 
 /* Media Query para telas menores que 1024px (tablets) */
 @media (max-width: 1024px) {
   .quadrado-invisivel {
-    width: 60vw;  /* Ajusta a largura para 60% da largura da tela */
-    height: 60vw; /* Ajusta a altura para 60% da largura da tela */
-    top: 15%; /* Ajusta a posição do topo */
+    width: 60vw;
+    /* Ajusta a largura para 60% da largura da tela */
+    height: 60vw;
+    /* Ajusta a altura para 60% da largura da tela */
+    top: 1%;
+    /* Ajusta a posição do topo */
+    padding-top: 8%;
+    /* Ajuste conforme necessário para descer a imagem */
   }
 }
 
 /* Media Query para telas menores que 768px (tablets em modo retrato e celulares grandes) */
 @media (max-width: 768px) {
   .quadrado-invisivel {
-    width: 70vw;  /* Ajusta a largura para 70% da largura da tela */
-    height: 70vw; /* Ajusta a altura para 70% da largura da tela */
-    top: 20%; /* Ajuste no topo */
+    width: 70vw;
+    /* Ajusta a largura para 70% da largura da tela */
+    height: 70vw;
+    /* Ajusta a altura para 70% da largura da tela */
+    top: 20%;
+    /* Ajuste no topo */
   }
 }
 
 /* Media Query para telas menores que 480px (celulares pequenos) */
 @media (max-width: 480px) {
   .quadrado-invisivel {
-    width: 40vw;  /* Ajusta a largura para 40% da largura da tela */
-    height: 40vw; /* Ajusta a altura para 40% da largura da tela */
-    position: absolute; /* Garantir que a posição seja absoluta */
-    top: 50%; /* Posiciona o quadrado no meio da tela (verticalmente) */
-    left: 50%; /* Posiciona o quadrado no meio da tela (horizontalmente) */
-    transform: translate(-50%, -50%); /* Ajusta o quadrado para que seu centro seja o ponto de referência */
-    background-color: rgba(0, 0, 0, 0); /* Mantém o quadrado invisível */
+    width: 40vw;
+    /* Ajusta a largura para 40% da largura da tela */
+    height: 40vw;
+    /* Ajusta a altura para 40% da largura da tela */
+    position: absolute;
+    /* Garantir que a posição seja absoluta */
+    top: 50%;
+    /* Posiciona o quadrado no meio da tela (verticalmente) */
+    left: 50%;
+    /* Posiciona o quadrado no meio da tela (horizontalmente) */
+    transform: translate(-50%, -50%);
+    /* Ajusta o quadrado para que seu centro seja o ponto de referência */
+    background-color: rgba(0, 0, 0, 0);
+    /* Mantém o quadrado invisível */
   }
 }
 
@@ -88,6 +111,7 @@ video {
   border: 2px solid #ccc;
   border-radius: 10px;
 }
+
 /*carrossel*/
 .carrossel {
   width: 1300px;
@@ -163,7 +187,8 @@ button {
   /* Centraliza horizontalmente o conteúdo do botão */
 }
 
-/* Remove a margem da última coluna *//* */
+/* Remove a margem da última coluna */
+/* */
 .control-column:last-child {
   margin-right: 0;
   /* Remove a margem do último botão */
@@ -189,7 +214,7 @@ button {
 
   display: inline-block;
   /* Altera para inline-block para evitar estiramento */
- 
+
   min-width: 70px;
   /* Largura mínima */
 
@@ -214,44 +239,60 @@ button {
 /* Para telas com largura até 1024px (tablets em modo paisagem ou desktops menores) */
 @media (max-width: 1024px) {
   .controls {
-    gap: 40px;  /* Menos espaço entre os botões em telas menores */
+    gap: 40px;
+    /* Menos espaço entre os botões em telas menores */
   }
 
   .controls button {
-    padding: 5px 10px; /* Ajustar o padding para caber melhor */
-    min-width: 60px; /* Botões um pouco menores */
+    padding: 5px 10px;
+    /* Ajustar o padding para caber melhor */
+    min-width: 60px;
+    /* Botões um pouco menores */
   }
 
   .controls button img {
-    width: 25px;  /* Reduzir o tamanho da imagem */
+    width: 25px;
+    /* Reduzir o tamanho da imagem */
     height: 25px;
   }
 }
+
 /* Para telas com largura até 480px (dispositivos móveis) */
 /* Para telas com largura até 480px (dispositivos móveis) */
 @media (max-width: 480px) {
   .controls {
-    gap: 55px;  /* Aumenta o espaço entre os botões */
+    gap: 55px;
+    /* Aumenta o espaço entre os botões */
     position: fixed;
-    right: 40px;  /* Coloca os botões no lado direito */
-    flex-direction: row-reverse; /* Organiza os botões na ordem inversa */
-    top: 1px; 
+    right: 40px;
+    /* Coloca os botões no lado direito */
+    flex-direction: row-reverse;
+    /* Organiza os botões na ordem inversa */
+    top: 1px;
   }
 
   .controls button {
-    padding: 5px;  /* Ajusta o tamanho do padding para telas menores */
-    min-width: 50px;  /* Ajusta a largura mínima */
-    height: 42px;  /* Define a altura dos botões para 42px */
+    padding: 5px;
+    /* Ajusta o tamanho do padding para telas menores */
+    min-width: 50px;
+    /* Ajusta a largura mínima */
+    height: 42px;
+    /* Define a altura dos botões para 42px */
     display: flex;
-    align-items: center;  /* Centraliza o conteúdo verticalmente */
-    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
-    border-radius: 4px;  /* Bordas arredondadas */
-    
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+
   }
 
   .controls button img {
-    width: 15px;  /* Tamanho ajustado para a imagem */
-    height: 15px;  /* Tamanho ajustado para a imagem */
+    width: 15px;
+    /* Tamanho ajustado para a imagem */
+    height: 15px;
+    /* Tamanho ajustado para a imagem */
   }
 }
 
@@ -12898,13 +12939,15 @@ p {
   line-height: 1.5;
   margin: 100;
 }
+
 .page-section h3.section-subheading1,
 .page-section .section-subheading.h3 {
   font-size: 1rem;
-  color: fff;
+  color: #FFF;
   font-weight: 400;
   font-style: italic;
 }
+
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -13436,24 +13479,33 @@ section#contact {
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* Ajusta a imagem para cobrir toda a área sem distorção */
-  width: 100%; /* Usa 100% da largura da tela */
-  max-width: 100%; /* Garante que não ultrapasse a largura da tela */
-  margin: 0 auto; /* Centraliza a seção */
-  padding: 50px 20px; /* Adiciona espaçamento interno (opcional) */
+  background-size: cover;
+  /* Ajusta a imagem para cobrir toda a área sem distorção */
+  width: 100%;
+  /* Usa 100% da largura da tela */
+  max-width: 100%;
+  /* Garante que não ultrapasse a largura da tela */
+  margin: 0 auto;
+  /* Centraliza a seção */
+  padding: 50px 20px;
+  /* Adiciona espaçamento interno (opcional) */
 }
 
 /* Ajuste adicional para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 1064px) {
   section#contact {
-    padding: 30px 15px; /* Reduz o padding em telas menores */
+    padding: 30px 15px;
+    /* Reduz o padding em telas menores */
+    width: 700px;
+    /* Usa 100% da largura da tela */
   }
 }
 
 /* Ajuste para telas muito pequenas */
 @media (max-width: 480px) {
   section#contact {
-    padding: 20px 10px; /* Reduz ainda mais o padding em dispositivos muito pequenos */
+    padding: 20px 10px;
+    /* Reduz ainda mais o padding em dispositivos muito pequenos */
   }
 }
 
@@ -13529,22 +13581,25 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .btncontato {
   margin-left: 18%;
-  margin-top: -30px; 
+  margin-top: -30px;
 }
 
-.logoibama{ 
+.logoibama {
   width: 230px;
   height: auto;
 }
-.logoambipar{
+
+.logoambipar {
   width: 150px;
   height: auto;
 }
-.logoabiquim{
+
+.logoabiquim {
   width: 180px;
-  height: auto; 
+  height: auto;
 }
-.logoselos{ 
+
+.logoselos {
   width: 150px;
   height: auto;
 }
