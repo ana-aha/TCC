@@ -222,8 +222,6 @@ button {
 @media (max-width: 1024px) {
   .controls {
     gap: 40px;
-    width: 50px;
-    height: 40px;
     /* Menos espaço entre os botões em telas menores */
   }
 
@@ -254,21 +252,15 @@ button {
 /* Para telas com largura até 480px (dispositivos móveis) */
 @media (max-width: 480px) {
   .controls {
-    gap: 55px;
-    /* Aumenta o espaço entre os botões */
+    gap: 55px; /* Aumenta o espaço entre os botões */
     position: fixed;
-    right: 40px;
-    /* Coloca os botões no lado direito */
-    flex-direction: row-reverse;
-    /* Organiza os botões na ordem inversa */
+    right: 40px; /* Ajusta o espaço entre os botões e a borda direita */
+    flex-direction: row-reverse; /* Organiza os botões na ordem inversa */
     top: 1px;
   }
-  /* Ajuste de imagem para telas móveis */
-  img {
-    max-width: 100%; /* Ajusta para ocupar toda a largura disponível */
-    height: auto; /* Mantém a proporção da imagem */
-  }
+ 
 }
+
 
 
 /* Para telas com largura até 768px (tablets e dispositivos com tela maior) */
@@ -13024,9 +13016,6 @@ p {
   text-transform: uppercase;
 }
 
-#mainNav .navbar-brand img {
-  height: 3rem;
-}
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -13517,11 +13506,21 @@ section#contact {
 /* Ajuste para telas muito pequenas */
 @media (max-width: 480px) {
   section#contact {
-    padding: 20px 10px;
-    margin-top: 20px; /* Menor margem superior para telas muito pequenas */
+    padding: 70px 40px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; /* Garante que a div ocupe toda a largura da seção */
   }
 }
-
 /* Ajuste para garantir que o rodapé não tenha margens extras */
 footer.footer {
   margin-top: 0; /* Garante que não haja espaço entre o contato e o rodapé */
