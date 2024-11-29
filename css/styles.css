@@ -181,6 +181,39 @@ button {
 .control-column:last-child {
   margin-right: 0;
 }
+.controls {
+  display: flex;
+  gap: 70px; /* Espaçamento entre os botões */
+}
+
+.control-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 50px; /* Largura fixa para os botões */
+  height: 50px; /* Altura fixa para os botões */
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+button img {
+  width: 100%; /* A imagem ocupa toda a largura do botão */
+  height: 100%; /* A imagem ocupa toda a altura do botão */
+  object-fit: contain; /* Garante que a imagem não seja distorcida */
+}
+
+/* Estilos adicionais para hover ou foco */
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
 
 .controls button {
   padding: 5px 12px;
@@ -3711,7 +3744,6 @@ textarea.form-control.is-invalid {
 .btn:disabled,
 .btn.disabled,
 fieldset:disabled .btn {
-  margin-top: 2rem !important;
   margin-bottom: 2rem !important;
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
@@ -13590,14 +13622,19 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .btncontato {
-  margin-left: 20%;
+  margin-left: 30%;
   
 }
-/* Media Query para telas com largura até 480px */
 @media (max-width: 480px) {
   .btncontato {
-    font-size: 10px; /* Reduz o tamanho da fonte */
-    text-align: center; /* Garante que o texto do botão esteja centralizado */
+      font-size: 10px; /* Adjust the font size */
+      text-align: center; /* Ensure the text inside the button is centered */
+      padding: 15px; /* Adjust padding for better spacing */
+      
+      /* Center the button horizontally and vertically */
+      display: flex;
+      justify-content: center; /* Centers the button horizontally */
+      align-items: center; /* Centers the button vertically */
   }
 }
 
