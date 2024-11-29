@@ -13596,8 +13596,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* Media Query para telas com largura até 480px */
 @media (max-width: 480px) {
   .btncontato {
-    width: 100px; /* Faz o botão ocupar toda a largura disponível */
-    padding: 10px 20px; /* Ajusta o padding para botões menores */
     font-size: 10px; /* Reduz o tamanho da fonte */
     text-align: center; /* Garante que o texto do botão esteja centralizado */
   }
