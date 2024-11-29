@@ -1,57 +1,51 @@
 window.addEventListener('DOMContentLoaded', event => {
     let fontSize = 16;
 
-    // Função para atualizar o tamanho da fonte
     function updateFontSize() {
         document.querySelectorAll('h2, h3, h4, p, background-color').forEach(element => {
             element.style.fontSize = fontSize + 'px';
         });
     }
 
-    // Aumentar o tamanho da fonte
     document.getElementById('increaseFont').addEventListener('click', () => {
-        fontSize += 2; // Aumenta o tamanho da fonte
-        updateFontSize(); // Aplica o novo tamanho
+        fontSize += 2; // Increase font size
+        updateFontSize(); // Apply new size
     });
 
-    // Diminuir o tamanho da fonte
     document.getElementById('decreaseFont').addEventListener('click', () => {
-        if (fontSize > 10) { // Limita o tamanho mínimo
-            fontSize -= 2; // Diminui o tamanho da fonte
-            updateFontSize(); // Aplica o novo tamanho
+        if (fontSize > 10) { // Limit minimum size
+            fontSize -= 2; // Decrease font size
+            updateFontSize(); // Apply new size
         }
     });
 
-    // Inicializa o tamanho da fonte
+    // Initialize font size
     updateFontSize();
 
-    // Mudar para modo escuro ou claro
     document.getElementById('toggleMode').addEventListener('click', () => {
-        // Verifica se o modo escuro está ativado
+        // Toggle background and text color
         const isDarkMode = document.body.style.backgroundColor === 'black';
-
-        // Alterna entre modo claro e escuro
         document.body.style.backgroundColor = isDarkMode ? 'white' : 'black';
         document.body.style.color = isDarkMode ? 'black' : 'white';
 
-        // Muda a cor do texto no div específico
+        // Access specific div
         const infoDiv = document.querySelector('.col-lg-4.text-lg-end');
-        infoDiv.style.color = isDarkMode ? 'black' : 'white';
+        infoDiv.style.color = isDarkMode ? 'black' : 'white'; // Change text color in the div
 
         const modeButton = document.getElementById('toggleMode');
         const img = modeButton.querySelector('img');
 
-        // Muda o texto alternativo e a imagem do botão
+        // Change alt text and image of the button
         if (img.alt === 'Modo Escuro') {
             img.alt = 'Modo Claro';
-            img.src = 'assets/img/acessbilidade/contraste.png'; // Imagem para modo claro
+            img.src = 'assets/img/acessbilidade/contraste.png'; // Image for light mode
         } else {
             img.alt = 'Modo Escuro';
-            img.src = 'assets/img/acessbilidade/contraste.png'; // Imagem para modo escuro
+            img.src = 'assets/img/acessbilidade/contraste.png'; // Image for dark mode
         }
     });
 
-    // Função para aplicar o encolhimento da navbar na inicialização
+    // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
@@ -60,73 +54,33 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarCollapsible.classList.add('navbar-shrink');
         }
     };
-    document.querySelector('.navbar-toggler').addEventListener('click', function () {
-        window.location.href = 'index.html';  // Redireciona para a página inicial
-    });
-    // Inicializa a função navbarShrink
+
+    // Shrink the navbar
     navbarShrink();
 
-    // Ativa o scrollspy do Bootstrap na navegação principal
+    // Shrink the navbar when the page is scrolled
+    document.addEventListener('scroll', navbarShrink);
+
+    // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
-    }
+    };
 
-    // Fecha a navbar responsiva quando um item do menu é clicado
+    // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(document.querySelectorAll('#navbarResponsive .nav-link'));
-
-    // Adiciona o evento de clique para cada item de navegação
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();  // Simula um clique no botão de toggle para fechar o menu
+                navbarToggler.click();
             }
         });
     });
 });
-// Função para aplicar o encolhimento da navbar na inicialização
-var navbarShrink = function () {
-    const navbarCollapsible = document.body.querySelector('#mainNav');
-    if (!navbarCollapsible) {
-        return;
-    } else {
-        navbarCollapsible.classList.add('navbar-shrink');
-    }
-};
 
-// Inicializa a função navbarShrink
-navbarShrink();
-
-// Ativa o scrollspy do Bootstrap na navegação principal
-const mainNav = document.body.querySelector('#mainNav');
-if (mainNav) {
-    new bootstrap.ScrollSpy(document.body, {
-        target: '#mainNav',
-        rootMargin: '0px 0px -40%',
-    });
-}
-
-// Fecha a navbar responsiva quando um item do menu é clicado
-const navbarToggler = document.body.querySelector('.navbar-toggler');
-const responsiveNavItems = [].slice.call(document.querySelectorAll('#navbarResponsive .nav-link'));
-
-// Adiciona o evento de clique para cada item de navegação
-responsiveNavItems.map(function (responsiveNavItem) {
-    responsiveNavItem.addEventListener('click', () => {
-        if (window.getComputedStyle(navbarToggler).display !== 'none') {
-            navbarToggler.click();  // Simula um clique no botão de toggle para fechar o menu
-        }
-    });
-});
-
-// Adiciona o evento de clique ao botão de alternância para redirecionar para a página inicial
-navbarToggler.addEventListener('click', function() {
-    // Verifica se o menu está aberto (o que pode ser útil para evitar redirecionamento indesejado)
-    if (document.body.classList.contains('navbar-collapse')) {
-        window.location.href = 'index.html'; // Redireciona para a página inicial
-    }
-});

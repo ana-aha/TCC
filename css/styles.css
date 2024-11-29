@@ -4719,10 +4719,7 @@ fieldset:disabled .btn {
   }
 }
 
-/* Remover o texto decorativo no estado hover do botão */
-.navbar-toggler:hover {
-  text-decoration: none;
-}
+
 
 /* Remover o outline e a sombra de foco no botão */
 .navbar-toggler:focus {
@@ -13020,12 +13017,13 @@ section + section {
   background-color: #ffff;
 }
 
-#mainNav .navbar-toggler {
-  padding: 0.75rem;
-  font-size: 0.75rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  font-weight: 700;
+/* Estilos para telas com largura de 480px ou menor */
+@media (max-width: 480px) {
+  #mainNav .navbar-toggler {
+    font-size: 0.9rem;  /* Aumenta o tamanho da fonte para torná-la mais legível */
+    padding: 0.5rem;  /* Diminui o padding para ajustar o tamanho */
+    top: 40%;  /* Ajusta a posição para melhor centralização */
+  }
 }
 
 #mainNav .navbar-brand {
