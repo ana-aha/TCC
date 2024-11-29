@@ -20,3 +20,18 @@
     width: 100%;
     height: 100%;
   }
+
+  /* Media query para telas com largura até 480px */
+@media (max-width: 480px) {
+  .botoes {
+      flex-direction: column; /* Torna os botões empilhados */
+      align-items: center; /* Alinha os itens no centro */
+      text-align: center; /* Ajusta o alinhamento do texto */
+      max-width: 100%; /* Garante que o contêiner ocupe toda a largura da tela */
+  }
+
+  .botoes .btn {
+      margin: 0.5rem; /* Aumenta o espaçamento entre os botões */
+      padding: 0.8rem 1.5rem; /* Ajusta o padding dos botões */
+  }
+}
