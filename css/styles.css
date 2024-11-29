@@ -4712,32 +4712,50 @@ fieldset:disabled .btn {
   transition: var(--bs-navbar-toggler-transition);
 }
 
+/* Media query para reduzir transições se o usuário preferir menos movimento */
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
-    transition: none;
+    transition: none; /* Remove a transição */
   }
 }
 
+/* Remover o texto decorativo no estado hover do botão */
 .navbar-toggler:hover {
   text-decoration: none;
 }
 
+/* Remover o outline e a sombra de foco no botão */
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
 }
 
+/* Estilo do ícone do botão */
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  background-image: var(--bs-navbar-toggler-icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  width: 1.5em; /* Define o tamanho do ícone */
+  height: 1.5em; /* Define o tamanho do ícone */
+  vertical-align: middle; /* Alinha verticalmente o ícone */
+  background-image: var(--bs-navbar-toggler-icon-bg); /* Define a imagem de fundo */
+  background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-size: 100%; /* Ajusta o tamanho da imagem de fundo */
 }
+
+/* Adiciona um redimensionamento específico para telas pequenas (480px ou menos) */
+@media (max-width: 480px) {
+  .navbar-toggler {
+    width: 20%; /* Faz o botão ocupar toda a largura disponível */
+  }
+  
+
+  .navbar-toggler-icon {
+    width: 2em; /* Ajusta o tamanho do ícone no modo móvel */
+    height: 2em; /* Ajusta a altura do ícone no modo móvel */
+  }
+}
+
 
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
