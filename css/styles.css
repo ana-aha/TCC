@@ -13016,7 +13016,7 @@ section + section {
   padding-bottom: 1rem;
   background-color: #ffff;
 }
-
+/* Estilos para telas com largura de 480px ou menor */
 /* Estilos para telas com largura de 480px ou menor */
 @media (max-width: 480px) {
   #mainNav .navbar-toggler {
